@@ -15,7 +15,8 @@ ls
 cd CICD-react-frontend
 nano Dockerfile
 cat Dockerfile
-
+sudo snap install docker
+sudo chmod 666 /var/run/docker.sock
 docker build -t front .
 
 Run the Container
